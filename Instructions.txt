@@ -1,0 +1,9 @@
+		
+		 > *************************** <
+		 > **  N U M E R O L O G Y  ** <
+		 > *************************** <
+
+	THIS LITTLE PROGRAM WILL TELL YOU MANY
+	INTERESTING THINGS ABOUT YOU BASED ON 
+	YOUR BIRTH DATE AND NAME. 
+
