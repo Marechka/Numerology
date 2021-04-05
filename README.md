@@ -4,7 +4,7 @@ Author	: Masha Fitzgerald
 Project	: BC CS 210, Final Project
 Date	: 03.18.21
 
-# MY PROJECT
+## MY PROJECT
 
     This program takes full name and birth date from user, stores this information 
 and uses it to determine key Numerological meanings. 
@@ -18,11 +18,11 @@ from the file particularly assigned lines.
     Lo Shu Grid: calculate repetition of each digit in the birth date. Digit and times it occurs 
 in birth date ( up to 4 only) correspond to the personality trait in a grid. 
 
-# Bugs
-1. If  "-" or " ' " entered with name
-2. Will not take " . " or " / " as part of birth date entry
-
-# Helpful data
+## Helpful data
 ![Lo Shu grid](img/Lo%20Shu%20Grid.png)
 ![name number and color](img/name%20number%20and%20color.png)
+
+## Bugs
+1. If  "-" or " ' " entered with name
+2. Will not take " . " or " / " as part of birth date entry
 
