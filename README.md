@@ -24,5 +24,5 @@ in birth date ( up to 4 only) correspond to the personality trait in a grid.
 
 # Helpful data
 ![Lo Shu grid](img/Lo%20Shu%20Grid.png)
-![name number and color](img/name number and color.png)
+![name number and color](img/name%20number%20and%20color.png)
 
