@@ -1,7 +1,9 @@
 // Author: Masha Fitzgerald
- // Description: Final Project (my class)
+// Description: BC CS 210, Final Project (my class)
 
 import java.util.Scanner;
+import java.util.*; 
+import java.util.stream.*;
 
 public class Numerology {
 
@@ -10,88 +12,63 @@ public class Numerology {
    private String birthDate;
    private Character c1;
    private int [] lettersToNumbers;
-   public int sumDD;
-   public int sumMM;
-   public int sumYYYY;
-   public int expressionNumber;
+   private String [][] loShuGrid = {{"","","","",""}, {"", "Introvert ", "Communicative ", "Talkative ", "Compassionate "}, {"","Sensitive ", "Bright ", "Very Sensitive ", "Loner "}, {"","Excellent ", "Creative ", "Over Imaginative ", "Over Imaginative "}, {"","Orderly and stable ", "Pragmatic ", "Hard working ", "More physical activity "}, {"","Caring", "Persistent ", "Determined ", "Instantaneous action "}, {"","Good adviser ", "Originative ", "High tempered ", "Emotional "}, {"","Learn through experience ", "Spiritual ", "Learn through loss ", "Has difficulties in many fronts of life "}, {"","Scrupulous ", "Adamant ", "Materialistic ", "Ceaselessly in motion "}, {"","Intelligent ", "Critical ", "A Giver ", "Brilliant but, a loner "}};
+   private int setSumOfNum;
  
-  
+  // request from a user birth date, validate entry
    public void setBirthDate() {
       Scanner keaboard = new Scanner(System.in);
       System.out.print( "Please enter your birth date in format ddmmyyyy: ");
       birthDate = keaboard.nextLine();
+      while (!birthDate.matches("[0-9]+") || birthDate.length() != 8) { // takes only numerical symbols
+         if (!birthDate.matches("[0-9]+")) {
+            System.out.println( "Invalid entry. Only nuerical value is acceptable. Try again: ");
+         } else if (birthDate.length() != 8) { // must be 8 digits dd+mm+yyyy
+            System.out.println( "Entry is too short or too long. Please enter 2 digits for a day, 2 for a month and 4 for a year - ddmmyyyy. Try again: ");
+         }
+         birthDate = keaboard.nextLine();
+      }
    }
+   
+   // request from a user full name, validate entry
    public void setFullName() {
       Scanner keaboard = new Scanner(System.in);
-      System.out.print( "Please enter your full name: ");
+      System.out.print( "Please enter your full name: "); 
       fullName = keaboard.nextLine();
+      while (!fullName.matches("[a-zA-Z_ ]+")) {    // takes only alphabetical characters and space, will break if enter "'" or "-"
+         System.out.println( "Invalid entry. Try again: ");
+         fullName = keaboard.nextLine();
+      }
+      lettersToNumbers = new int[fullName.length()];
    } 
    
-   
+   // show full name
    public String displayFullName() {
       return fullName;
    }
    
+   // show birth date 
    public String displayBirthDate() {
       return birthDate;
    }
    
-   /*public int setAndDisplaySumDD() {
-      for (int i = 0; i < birthDate.length(); i++) {
-         char a = birthDate.charAt(i);
-         int b = Character.getNumericValue(a);
-         if (i <= 1) {
-            sumDD += b;
-         }
-      }
-      return sumDD;
-   }
-   public int setAndDisplaySumMM() {
-      for (int i = 0; i < birthDate.length(); i++) {
-         char a = birthDate.charAt(i);
-         int b = Character.getNumericValue(a);
-         if ( i > 1 && i <= 3) {
-            sumMM += b;
-         }
-      }
-      return sumMM;
-   }
-
-   public int setAndDisplaySumYYYY() {
-      for (int i = 0; i < birthDate.length(); i++) {
-         char a = birthDate.charAt(i);
-         int b = Character.getNumericValue(a);
-         if ( i > 3 && i <= 8) {
-            sumYYYY += b;
-         }
-      }
-      return sumYYYY;
-   } */
-
-   public int lifePathNumber() {
-      int lifePathNumber = getSumCharsFromInt_Trim(birthDate, 0, 1) + getSumCharsFromInt_Trim(birthDate, 2, 3) + getSumCharsFromInt_Trim(birthDate, 4, 7);
-      while (lifePathNumber >= 10) {
-         lifePathNumber = getSumCharsFromInt(lifePathNumber);
-      }
-      return lifePathNumber;
+  // sum of parts of BD = dd+mm+yyyy
+   public int subSumDD_MM_YYYY() {
+      int subSum_dd_mm_yyyy = getSumCharsFromString_Trim(birthDate, 0, 1) + getSumCharsFromString_Trim(birthDate, 2, 3) + getSumCharsFromString_Trim(birthDate, 4, 7);
+      
+      return subSum_dd_mm_yyyy;
    }
    
-   public int expressionNumber() {
-     //int[] 
-      lettersToNumbers = new int[fullName.length()];
-      int subTotalExpressionNumber = 0;
-      //Character c1 = 'a';
-      
+   // determine numerical value of each letter in name, sum
+   public int sumOfNumAssignedToLetters() {
+      int sumOfNum = 0;
+     
       for (int i = 0; i < fullName.length(); i++) {
          c1 = Character.toUpperCase(fullName.charAt(i)) ;
-         
-         //System.out.print(c1 + " | "); // test
-         
+         //System.out.print(c1 + " | ");                   ----------- test
          if (c1 == 'A' || c1 == 'J' || c1 == 'S' ) {
             lettersToNumbers[i] = 1;
-            
-            //System.out.println( lettersToNumbers[i] + " "); //test
-            
+         //System.out.println( lettersToNumbers[i] + " "); ----------- test
          } else if (c1 == 'B' || c1 == 'K' || c1 =='T' )  {
             lettersToNumbers[i] = 2;
          } else if (c1 == 'C' || c1 == 'L' || c1 == 'U' )  {
@@ -108,78 +85,58 @@ public class Numerology {
             lettersToNumbers[i] = 8;
          } else if (c1 == 'I' || c1 == 'R')  {
             lettersToNumbers[i] = 9;
+         } else if (c1 == ' ') {
+            lettersToNumbers[i] = 0;
          }
-         subTotalExpressionNumber += lettersToNumbers[i];
-         //System.out.print(c1 + " | ");
+         sumOfNum += lettersToNumbers[i];
+         setSumOfNum = sumOfNum;
       }
       System.out.println();
-      
-      /*for (int i = 0; i < lettersToNumbers.length; i++) {
-         c1 = Character.toUpperCase(fullName.charAt(i)) ;
-         System.out.print(lettersToNumbers[i] + " + ");
-      } */
-    
-      System.out.println(" why this number goes up = " + subTotalExpressionNumber);
-      
-      /* String subTotalExpressionNumberString = String.valueOf(subTotalExpressionNumber);
-      //int finalExpressionNumber = 0;
-      for (int i = 0; i < subTotalExpressionNumberString.length(); i++) {
-         char a = subTotalExpressionNumberString.charAt(i);
-         int b = Character.getNumericValue(a);
-         expressionNumber += b;
-      }
-      //expressionNumber = finalExpressionNumber;
-      System.out.println("The expression number is: " + expressionNumber); */
-      expressionNumber = getSumCharsFromInt(subTotalExpressionNumber);
-      return  expressionNumber;
+      return setSumOfNum;
    }
    
+   // keep summarizing untill value = 1 to 9
+   public int sumTillBecome_1to9 ( int subNumber) {
+      while (subNumber >= 10) { 
+      
+         subNumber = getSumCharsFromInt(subNumber);   //--------2nd method
+      }
+      return  subNumber;
+   }
    
+   // break down name into chars and print with a separator "|"
    public void printFullNameAsChars(String fullName) {
+      System.out.println();
       for (int i = 0; i < fullName.length(); i++) {
          c1 = Character.toUpperCase(fullName.charAt(i));
-         System.out.print(c1 + " | ");
-      }
-      System.out.println();
-   }
-   public void printFullNameInt() {
-      for (int i = 0; i < lettersToNumbers.length; i++) {
-         System.out.print(lettersToNumbers[i] + " + ");
-      }
-      System.out.println();
-   }
-
-
-   
-  /*public void runThroughTheLoop( String fullName, Character c1, char separator) {
-      c1 = Character.toUpperCase(fullName.charAt(i));
-      System.out.print(lettersToNumbers[i] + ' ' + separator + ' ');
-  }
-   
-   /*public int lifePathNumber() {
-      int dd = 0, mm = 0, yyyy = 0;
-      for (int i = 0; i < birthDate.length(); i++) {
-         char a = birthDate.charAt(i);
-         int b = Character.getNumericValue(a);
-         if (i <= 1) {
-            dd += b;
-         } else if ( i > 1 && i <= 3) {
-            mm += b;
-         } else if ( i > 3 && i <= 8) {
-            yyyy += b;
+         if (i == fullName.length() - 1) {
+            System.out.print(c1);
+         } else if (i == 0) {
+            System.out.print("   " + c1 + " | ");
+         } else {
+            System.out.print(c1 + " | ");
          }
       }
-      int sum = dd + mm + yyyy;
-      System.out.println( " Sum of digits for a day is: " + dd + " \n Sum of digits for a month: " + mm + " \n Sum of digits for a year: " + yyyy);
-      System.out.println( " dd + mm + yyyy = " + sum);
-      return sum;
-   } */
-      
+   }
    
-   public int getSumCharsFromInt( int numerical) {
+   // print numbers assigned to the letters in a full name with "+" and their sum
+   public void printFullNameInt() {
+      for (int i = 0; i < lettersToNumbers.length; i++) {
+         if ( i == lettersToNumbers.length - 1) {
+            System.out.print(lettersToNumbers[i]);
+         } else if (i == 0) {
+            System.out.print("   " + lettersToNumbers[i] + " + ");
+         } else {
+            System.out.print(lettersToNumbers[i] + " + ");
+         }
+      }
+      System.out.print( " = " + setSumOfNum);
+   }
+      
+   // takes int - break down integer on chars, get their numerical value and sum again
+   public int getSumCharsFromInt( int numerical) {                          //--------------- 1st method
       String makeNumericalText = String.valueOf(numerical);
       int totalOfChars = 0;
-      //int finalExpressionNumber = 0;
       for (int i = 0; i < makeNumericalText.length(); i++) {
          char a = makeNumericalText.charAt(i);
          int b = Character.getNumericValue(a);
@@ -187,11 +144,10 @@ public class Numerology {
       }
       return totalOfChars;
    }
-      
-   public int getSumCharsFromInt_Trim( String numerical, int beginIndex, int endIndex) {
-       // String makeNumericalText = String.valueOf(numerical);
+   
+    // takes String, indexes inside of String - break down String on chars, get their numerical value and sum again
+   public int getSumCharsFromString_Trim( String numerical, int beginIndex, int endIndex) {
       int totalOfChars = 0;
-      //int finalExpressionNumber = 0;
       String trim = numerical.substring(beginIndex, endIndex + 1);
       for (int i = 0; i < trim.length(); i++) {
          char a = trim.charAt(i);
@@ -200,8 +156,61 @@ public class Numerology {
       }
       return totalOfChars;
    }
-
-
+   
+   // evaluate repetitions of digits in Birth Date and compare them to lo Shu Grid
+   public String [][] runLoShuGrid() {
+      int[]rep = new int[10];
+      
+      
+      // evaluating repetitions of digits in Birth Date
+      for (int i=0; i< birthDate.length(); i++) {
+         char a = birthDate.charAt(i);
+         int b = Character.getNumericValue(a);
+         rep [b] += 1;
+      }
+      for ( int i = 1; i < rep.length; i++) {
+         if (rep[i] > 0) {
+            int digitInBD = i;
+            if (rep[i] == 1) {
+               System.out.println("Digit " + digitInBD + " repeats " + rep[i] + " time in your birth date");
+            } else {
+               System.out.println("Digit " + digitInBD + " repeats " + rep[i] + " times in your birth date");
+            }
+         }
+      } 
+      // comparing results to Lo Shu Grid
+      System.out.println( "\nYour personality traits are: ");
+      for ( int i = 0; i < rep.length; i++) {
+         int  j = rep [i];
+         if (j <= 4 && j != 0) {
+            System.out.println(loShuGrid [i][j]); // display results of running through lo Shu Grid
+         }
+      }
+      
+      //for (int i=0; i< rep.length; i++){
+         //System.out.println("runLoShuGrid repetition " + (i) + " " + rep[i]); // ---------- test
+      //} 
+      return loShuGrid;
+      
+   }
+    /*
+   public void thisBS() {
+      //int count = 0;
+      int[][]repetition = new int[10][10];
+      
+      for (int i=0; i< birthDate.length(); i++) {
+         char a = birthDate.charAt(i);
+         int b = Character.getNumericValue(a);
+         int total = 0;
+      //int b = Character.getNumericalValue(a);
+         for (int j=0; j < birthDate.length(); j++) {
+            int count = birthDate.charAt(j) == a ? 1:0;
+            total += count;
+         }
+         repetition[i] [b] += total;
+         System.out.println("repetition " + (i) + " "+ (b) + " " + repetition[i][b]);
+      }  
+   } */
 } 
   
 

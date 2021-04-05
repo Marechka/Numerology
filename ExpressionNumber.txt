@@ -1,78 +1,106 @@
-1	Expression number 1
-2	With a 1 Expression number, you possess strong leadership capabilities and a knack for creating your own opportunities. 
-3	You will go where others are afraid to go and you'll make the journey look easy. The number 1's energy is extremely self-sufficient,
-4	allowing you to be most innovative and productive when you're working alone. You may even find it difficult to cooperate with others,
-5	preferring to do things your way rather than listening to anyone else's opinions. If you aren't careful, the 1 Expression could make you
-6	seem aggressive and self-centered. It's not in your nature to think before you speak or act, but you would be wise to learn this skill!
-7	
-8	Expression number 2
-9	Working with others is your forte. Your 2 Expression makes you very skilled in relationships of all kinds, because it is cooperative, 
-10	supportive, and always striving for balance. You have a keen ability to read people and situations and react with patience and understanding. 
-11	Others see you as peaceful and humble, yet there is great strength in you. Still, your feelings can be easily hurt and you have a tendency to 
-12	doubt yourself when making decisions, which can make you idle. You would benefit from following your head instead of your heart from time to time.
-13	
-14	Expression number 3
-15	With the influence of the number 3, you are a naturally skilled communicator. You have a way with words and a great talent for conveying your
-16	creative ideas and inspiring others. Your social circle is strong and people find your optimistic attitude both magnetic and charming. However, 
-17	the relationships you form, like many other things in your life, don't go very deep. Your enthusiasm for life can be a distraction, making you unable
-18	to stay focused on one person, job, or plan long enough for it to develop into something complete or meaningful.
-19	
-20	Expression number 4
-21	Organized, down-to-earth, and hardworking, the 4 Expression gives you skills that make you incredibly capable and constructive. 
-22	You are a master at managing projects and teams and others rely on you because you follow everything through to completion. 
-23	You are honest, patient, and loyal -- sometimes, loyal to a fault. The number 4 carries a stubborn, rigid energy that can make you 
-24	so fixed in your ways that you are unable to grasp new, better ways of thinking, doing, and interacting.
-25	
-26	Expression number 5
-27	Your 5 Expression craves variety and freedom and wants to experience everything that life has to offer. You are an adventurous 
-28	person who takes pleasure in trying new things and following your latest passion. Your passions change quickly, however, 
-29	so you've learned to switch gears easily in order to explore as many possibilities as you can. Beware, though, that with all this 
-30	change comes inconsistency. Your restlessness can make you unreliable in relationships and unprepared to handle the hardships of life.
-31	
-32	Expression number 6
-33	Your strengths play out most notably in your relationships with others. The influence of the number 6 makes you incredibly protective
-34	and nurturing toward all people, but especially your family members and other close loved ones. You have a heart of gold and feel a 
-35	responsibility to be there to help those in need of support. It's important, though, that you don't forget about self-care. You can be so 
-36	focused on the well-being of others that you neglect to attend to your own emotions and energy levels. Be kind to yourself, too.
-37	
-38	Expression number 7
-39	You are the truth seeker. You are energized by information and willing to go deep into both the intellectual and spiritual realms in search
-40	of real meaning. Logic drives the way you think and communicate, and this helps you clearly convey your vast knowledge to others. 
-41	You are not satisfied with what's on the surface -- it's the hidden answers you are digging for. However, this assumption that there is always
-42	something to be found can make you suspicious of others. In fact, it may be hard for you to relate to other people in general; you tend to 
-43	prefer a controlled environment where you can do things your own way.
-44	
-45	Expression number 8
-46	An 8 Expression blesses you with great business sense and excellent judgement of people, money, and plans. This is why you are able to
-47	achieve so many goals -- you know the best resources and the most attainable ambitions. You do run the risk of being too ambitious, however,
-48	and turning from an effective leader into an impatient taskmaster. While your drive to attain success and material wealth is powerful, it's important
-49	that you balance it with meaningful people, emotions, and experiences.
-50	
-51	Expression number 9
-52	Your 9 Expression is creative and compassionate and encourages you to find the best in everybody. Whether you're providing emotional support
-53	to a friend or engaged in a larger humanitarian effort, you strive to make life better for others. People see you as being friendly and affectionate, 
-54	as long as you are immersing yourself in this altruistic work. If you are not living life in a way that is beneficial to other people, you could become 
-55	self-centered and detached from important emotions.
-56	
-57	Expression number 11
-59	Having a Master Number 11 as your Expression blesses you with profound intuitive capabilities and an idealistic vision. You are driven by instinct 
-60	and inspiration which give you a great, clear picture of the way things should be, yet you may lack the practical, organized thinking needed to bring 
-61	your dreams to fruition. Still, your charismatic presence draws many people toward you who are in search of support, encouragement, and wisdom. 
-62	You are a beacon of hope and light to those in need.
-63	
-64	Expression number 22
-65	Profound potential comes with a Master Number 22 Expression, which gives you a lot to live up to. 
-66	In Numerology, this number is called the "Master Builder" because it is capable of constructing grand ideas and even grander realities. 
-67	You are a cooperative team leader with a unique approach to solving problems and a desire to help others. You are headstrong and driven, 
-68	yet this brings a risk of becoming so domineering that you lose the support of others. Remember that your goal is to create, not to destroy. 
-69	You are in total control of your destiny.
-70	
-71	Expression number 33
-72	If your Expression is the Master Number 33, your mind and heart come together to make you an uplifting source of hope and healing. 
-73	You have keen insight into the ways the world works, plus the creative communication skills to share this knowledge with humanity. 
-74	Others turn to you to help guide them toward truth and inner knowledge -- you are an example of experience and enlightenment. 
-75	Though it may often feel like you are burdened by other people's struggles, realize that you have been given these nurturing skills 
-76	as a gift, and give of them freely.
+>>> Expression number 1 <<<
+
+With a 1 Expression number, you possess strong leadership capabilities and a knack for creating your own opportunities. 
+You will go where others are afraid to go and you'll make the journey look easy. The number 1's energy is extremely self-sufficient,
+allowing you to be most innovative and productive when you're working alone. You may even find it difficult to cooperate with others,
+preferring to do things your way rather than listening to anyone else's opinions. If you aren't careful, the 1 Expression could make you
+seem aggressive and self-centered. It's not in your nature to think before you speak or act, but you would be wise to learn this skill!
+
+>>> RED  <<<
+
+The most dominant personality. A visionary and risk-taker: energetic, passionate, tenacious, flamboyant and courageous.
+	
+>>> Expression number 2 <<<
+
+Working with others is your forte. Your 2 Expression makes you very skilled in relationships of all kinds, because it is cooperative, 
+supportive, and always striving for balance. You have a keen ability to read people and situations and react with patience and understanding. 
+Others see you as peaceful and humble, yet there is great strength in you. Still, your feelings can be easily hurt and you have a tendency to 
+doubt yourself when making decisions, which can make you idle. You would benefit from following your head instead of your heart from time to time.
+
+>>> ORANGE <<<
+
+Balanced both mentally and physically. Happy, loyal, takes each day as it comes.
+	
+>>> Expression number 3 <<<
+
+With the influence of the number 3, you are a naturally skilled communicator. You have a way with words and a great talent for conveying your
+creative ideas and inspiring others. Your social circle is strong and people find your optimistic attitude both magnetic and charming. However, 
+the relationships you form, like many other things in your life, don't go very deep. Your enthusiasm for life can be a distraction, making you unable
+to stay focused on one person, job, or plan long enough for it to develop into something complete or meaningful.
+
+>>> YELLOW <<<
+
+Cheerful, charming, magnetic, intelligent, confident, and creative. Somewhat psychic and enigmatic. A good leader and negotiator.
+	
+>>> Expression number 4 <<<
+
+Organized, down-to-earth, and hardworking, the 4 Expression gives you skills that make you incredibly capable and constructive. 
+You are a master at managing projects and teams and others rely on you because you follow everything through to completion. 
+You are honest, patient, and loyal -- sometimes, loyal to a fault. The number 4 carries a stubborn, rigid energy that can make you 
+so fixed in your ways that you are unable to grasp new, better ways of thinking, doing, and interacting.
+
+ >>> GREEN <<<
+
+The perfect balance between between the physical and mental. Grounded, logical, not easily influenced, rarely judgmental. 
+An intensely loyal friend - and has lots of them.
+	
+ >>> Expression number 5 <<<
+
+Your 5 Expression craves variety and freedom and wants to experience everything that life has to offer. You are an adventurous 
+person who takes pleasure in trying new things and following your latest passion. Your passions change quickly, however, 
+so you've learned to switch gears easily in order to explore as many possibilities as you can. Beware, though, that with all this 
+change comes inconsistency. Your restlessness can make you unreliable in relationships and unprepared to handle the hardships of life.
+
+ >>> BLUE <<<
+
+Optimistic, empathetic, flexible, idealistic, tranquil, patient, devoted. A natural mother.
+	
+>>> Expression number 6 <<<
+
+Your strengths play out most notably in your relationships with others. The influence of the number 6 makes you incredibly protective
+and nurturing toward all people, but especially your family members and other close loved ones. You have a heart of gold and feel a 
+responsibility to be there to help those in need of support. It's important, though, that you don't forget about self-care. You can be so 
+focused on the well-being of others that you neglect to attend to your own emotions and energy levels. Be kind to yourself, too.
+
+ >>> INDIGO <<<
+
+A brilliant old soul who is intuitive, sensitive, impulsive, curious, and ambitious, with a great lust for life.
+	
+ >>> Expression number 7 <<<
+
+You are the truth seeker. You are energized by information and willing to go deep into both the intellectual and spiritual realms in search
+of real meaning. Logic drives the way you think and communicate, and this helps you clearly convey your vast knowledge to others. 
+You are not satisfied with what's on the surface -- it's the hidden answers you are digging for. However, this assumption that there is always
+something to be found can make you suspicious of others. In fact, it may be hard for you to relate to other people in general; you tend to 
+prefer a controlled environment where you can do things your own way.
+
+ >>> VIOLET <<<
+
+An old soul. Intense, cerebral, wise, loving, generous, sentimental, and artistic. 
+	
+>>> Expression number 8 <<<
+
+An 8 Expression blesses you with great business sense and excellent judgement of people, money, and plans. This is why you are able to
+achieve so many goals -- you know the best resources and the most attainable ambitions. You do run the risk of being too ambitious, however,
+and turning from an effective leader into an impatient taskmaster. While your drive to attain success and material wealth is powerful, it's important
+that you balance it with meaningful people, emotions, and experiences.
+
+>>> ROSE <<<
+
+Main qualities are strength, love, and leadership. Turns visions into realities. 
+	
+>>> Expression number 9 <<<
+
+Your 9 Expression is creative and compassionate and encourages you to find the best in everybody. Whether you're providing emotional support
+to a friend or engaged in a larger humanitarian effort, you strive to make life better for others. People see you as being friendly and affectionate, 
+as long as you are immersing yourself in this altruistic work. If you are not living life in a way that is beneficial to other people, you could become 
+self-centered and detached from important emotions.
+
+>>> GOLD <<<
+
+Radiates love, joy, compassion, and understanding. 
+	
+
 
 
 
