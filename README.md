@@ -21,3 +21,8 @@ in birth date ( up to 4 only) correspond to the personality trait in a grid.
 # Bugs
 1. If  "-" or " ' " entered with name
 2. Will not take " . " or " / " as part of birth date entry
+
+# Helpful data
+![Lo Shu grid](http://url/to/Lo Shu Grid.png)
+![name number and color](http://url/to/name number and color.png)
+
